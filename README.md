@@ -1,76 +1,153 @@
-# Primer repositorio colaborativo
+# Primer Repositorio Colaborativo
 
-1. Crear un repositorio remoto
-El participante A deberá crear un nuevo repositorio en https://github.com. Es
-importante que el repositorio se cree vacío (sin tildar la opción del README.md)
+¡Bienvenidos al primer proyecto colaborativo! En este repositorio, aprenderemos a trabajar juntos utilizando Git y GitHub para gestionar versiones de código y colaborar de manera eficiente.
 
-2. Invitar a los colaboradores enlace
-El participante A deberá invitar al participante B como colaborador del repositorio
-que creó anteriormente.
+## Tabla de Contenidos
 
-    ¡Atención! Si el participante B acaba de crear su cuenta de GitHub, es posible que no
-    figure en el formulario de búsqueda, deberán esperar unos minutos para poder
-    hacerlo.
+1. [Crear un repositorio remoto](#1-crear-un-repositorio-remoto)
+2. [Invitar a colaboradores](#2-invitar-a-colaboradores)
+3. [Crear un repositorio local](#3-crear-un-repositorio-local)
+4. [Clonar el repositorio](#4-clonar-el-repositorio-remoto)
+5. [Trabajo en archivos diferentes](#5-trabajar-en-archivos-diferentes-parte-1)
+6. [Modificar archivos existentes](#6-trabajar-en-archivos-diferentes-parte-2)
+7. [Trabajar en el mismo archivo](#7-trabajar-en-el-mismo-archivo)
+8. [Resolver un conflicto](#8-resolver-un-conflicto)
+9. [Ejercitación libre](#9-ejercitación-libre)
+10. [Uso de ramas (branches)](#10-crear-y-usar-ramas-branches)
+11. [Buenas prácticas colaborativas](#11-buenas-prácticas-colaborativas)
 
-3. Crear un repositorio local y trabajar sobre él
-El participante A deberá crear un repositorio local, vincularlo con el
-repositorio remoto que creó anteriormente y subir un archivo README.md
-con el nombre del repositorio.
-Para eso, es recomendable seguir las instrucciones que figuran en GitHub al crear
-un repositorio.
+## 1. Crear un repositorio remoto
 
-4. Clonar un repositorio remoto
-Una vez que el participante A haya subido el primer archivo, el participante B
-deberá clonar el repositorio remoto creado por el participante A.
+El participante A deberá crear un nuevo repositorio en [GitHub](https://github.com). **Importante:** El repositorio debe ser creado vacío (sin seleccionar la opción de añadir README.md).
 
-5. Trabajar en archivos diferentes (parte 1)
-Ambos participantes deberán crear 3 archivos cada uno. Los archivos deben tener
-todos nombres diferentes (ej. pikachu.txt), así que ¡a ponerse de acuerdo! Una
-vez creados, deberán agregarles contenido, agregarlos al repositorio local y
-sincronizarlos con el repositorio remoto. Terminado esto, cada participante
-deberá descargar los cambios realizados por su pareja.
-Al finalizar este punto, ambos deberían tener 7 archivos: el README.md y los 3
-archivos creados por cada uno.
+## 2. Invitar a colaboradores
 
-6. Trabajar en archivos diferentes (parte 2)
-Ambos participantes agregarán contenido a cualquiera de los archivos que
-hayan creado. A continuación, subirán los cambios al repositorio remoto.
-Luego, ambos participantes actualizarán su repositorio local y verificarán que
-los cambios del otro participante se hayan aplicado.
+El participante `A` deberá invitar al participante `B` como colaborador del repositorio.
+> Si el participante `B` acaba de crear su cuenta de GitHub, puede tardar unos minutos en estar disponible para la invitación.
 
-7. Trabajar en el mismo archivo
+## 3. Crear un repositorio local
 
-    Ambos participantes deberán seleccionar el mismo archivo y hacer modificaciones
-    en su respectiva computadora. Les sugerimos escribir un par de líneas de texto que
-    tengan sentido porque va hacer más sencillo el próximo paso.
-    Una vez modificado el archivo en cada repositorio local, ambos deben
-    intentar sincronizarlo con el repositorio remoto.
+El participante `A` creará un repositorio local en su máquina, lo vinculará con el repositorio remoto, y subirá un archivo `README.md` con el nombre del repositorio.
 
-8. Resolver un conflicto
-El primer participante que sincronice el archivo podrá hacerlo sin problema. El
-segundo recibirá una notificación de que existen cambios en el repositorio remoto.
-¡Ahora deben decidir de qué manera resolverán el conflicto!
+### Pasos recomendados:
 
-    ● Dejando solo el contenido del participante A.
+1. Crear el repositorio local:
+    ```bash
+    git init
+    ```
+2. Vincular el repositorio remoto:
+    ```bash
+    git remote add origin https://github.com/usuario/repositorio.git
+    ```
+3. Crear el archivo README.md:
+    ```bash
+    echo "# Nombre del Repositorio" > README.md
+    git add README.md
+    git commit -m "Añadir README.md"
+    git branch -M main
+    git push origin main
+    ```
 
-    ● Dejando solo el contenido del participante B.
+## 4. Clonar el repositorio remoto
 
-    ● Unificando el contenido de ambos participantes
+El participante `B` clonará el repositorio remoto:
+```bash
+git clone https://github.com/juancuellardev/frontend-first-repo.git
+```
 
-    Una vez decidido el camino, el participante que corresponda hará los cambios
-    necesarios y subirá el archivo actualizado al repositorio remoto. Para terminar
-    el otro participante actualizará su repositorio local y verificará que los cambios
-    hayan sido aplicados.
+## 5. Trabajar en archivos diferentes (Parte 1)
 
-9. ¡Ejercitación libre!
-Ahora les toca a ustedes: creen nuevos archivos, modifiquen los existentes,
-generen conflictos y resuélvanlos.
+Ambos participantes deben crear 3 archivos con nombres diferentes (ej. pikachu.txt). Subirán estos archivos al repositorio remoto y luego descargarán los cambios del otro.
 
-10. EXTRA: Crear dos branch diferentes del main, y subir archivos a las
-mismas. Recuerda:
+### Pasos:
 
-    a. El comando para crear branch es `git branch nombre_rama`
+1. Crear 3 archivos.
+2. Agregar contenido y hacer commit:
+    ```bash
+    git add .
+    git commit -m "Agregar archivos"
+    ```
+3. Sincronizar con el repositorio remoto:
+    ```bash
+    git push origin main
+    ```
+4. Cada participante debe actualizar su repositorio local:
+    ```bash
+    git pull origin main
+    ```
 
-    b. Para posicionarse en esa rama el comando es `git checkout nombre_rama`
+## 6. Trabajar en archivos diferentes (Parte 2)
 
-    c. Para subir cambios a la rama creada es `git push origin nombre_rama`
+Cada participante modificará uno de los archivos creados previamente y subirá los cambios.
+
+### Pasos:
+
+1. Modificar archivo.
+2. Hacer commit y push:
+    ```bash
+    git add .
+    git commit -m "Modificar archivo"
+    git push origin main
+    ```
+
+## 7. Trabajar en el mismo archivo
+
+Ambos participantes deberán seleccionar el **mismo archivo** y hacer modificaciones en sus respectivas copias locales.
+
+### Pasos:
+
+1. Cada participante debe editar el archivo seleccionado.
+2. El primer participante que haga `git push` subirá su versión sin problemas.
+3. El segundo participante intentará hacer `git push` y encontrará un conflicto, lo que lleva al siguiente paso.
+
+## 8. Resolver un conflicto
+
+Cuando ambos participantes hayan modificado el mismo archivo, se generará un conflicto que debe resolverse antes de poder fusionar los cambios en el repositorio remoto.
+
+### Resolución de conflicto:
+
+1. Git notificará el conflicto cuando el segundo participante intente hacer `push`.
+2. El conflicto puede resolverse de las siguientes maneras:
+   - Conservar el contenido del participante A.
+   - Conservar el contenido del participante B.
+   - Unificar ambos contenidos.
+   
+3. Después de resolver el conflicto:
+   ```bash
+   git add archivo_modificado
+   git commit -m "Resolver conflicto"
+   git push origin main
+   ```
+
+## 9. Ejercitación libre
+
+Ahora es su turno de practicar. Creen nuevos archivos, modifiquen los existentes, generen conflictos y resuélvanlos.
+
+## 10. Crear y usar ramas (branches)
+
+Es importante dividir las tareas para evitar conflictos y mantener el trabajo organizado.
+
+### Pasos para trabajar con ramas:
+
+1. Crear una nueva rama:
+    ```bash
+    git branch nombre_rama
+    ```
+2. Moverse a la nueva rama:
+    ```bash
+    git checkout nombre_rama
+    ```
+3. Hacer cambios y subirlos:
+    ```bash
+    git add .
+    git commit -m "Cambios en nombre_rama"
+    git push origin nombre_rama
+    ```
+
+## 11. Buenas prácticas colaborativas
+
+- **Commits descriptivos:** Escribe mensajes de commit claros y detallados para que tus colaboradores puedan entender tus cambios fácilmente.
+- **Revisiones de código:** Antes de fusionar una rama al main, revisa los cambios de tus compañeros.
+- **Resolución de conflictos colaborativa:** Hablen y acuerden cómo resolver los conflictos para que todos estén alineados.
+- **Ramas por funcionalidad:** Trabaja en ramas separadas para cada funcionalidad o feature, lo que facilita el seguimiento y la organización.
+- **Documentación clara:** Actualiza este README.md y otros documentos relevantes con instrucciones claras para nuevos colaboradores.
