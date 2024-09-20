@@ -1,0 +1,18 @@
+header {
+    background-image: url('../img/sobre-el-curso-banner.png');
+    background-size: cover;
+    background-position: right;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    line-height: 200px;
+    margin: 0;
+    filter: drop-shadow(2px 2px 4px #222);
+}
+
+section {
+    padding: 20px 30px;
+}
