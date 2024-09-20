@@ -1,0 +1,22 @@
+.puntos {
+    padding-left: 50px;
+}
+.caja {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;   
+}
+.en-linea {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+p {
+    text-align: center;
+    font-weight: 450;
+    font-size: 28px;
+}
+img {
+    width: 100%;
+}
