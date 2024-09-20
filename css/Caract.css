@@ -4,7 +4,7 @@ header {
 }
 
 main {
-  padding-left: 30px;
+  text-align: center;
 }
 
 ul {padding-left: 35px;}
@@ -13,7 +13,10 @@ ul {padding-left: 35px;}
   display: inline-block;
   width: 200px;
   vertical-align: top;
+  margin: 10px 10px;
 }
+
+li {text-align: left;}
 
 .caja .img {
   width: 100%;
