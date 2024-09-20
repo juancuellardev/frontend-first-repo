@@ -1,0 +1,38 @@
+header {
+  text-align: center;
+  color: rgb(0, 103, 177);
+}
+
+main {
+  padding-left: 30px;
+}
+
+ul {padding-left: 35px;}
+
+.caja {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+.caja .img {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+}
+
+.caja .img-tarifa {
+  background-image: url('../img/sin-costo.jpg');
+}
+
+.caja .img-modalidad {
+  background-image: url('../img/Modalidad-virtual.jpg');
+}
+
+.caja .img-certif {
+  background-image: url('../img/Certification.jpg');
+}
+
+.caja .img-intensidad {
+  background-image: url('../img/Intensidad.png');
+}
