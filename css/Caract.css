@@ -1,17 +1,19 @@
 header {
+  background-color: rgb(0, 103, 177);
   text-align: center;
-  color: rgb(0, 103, 177);
+  color: white
 }
 
 main {
   text-align: center;
+  margin: 50px auto;
 }
 
 ul {padding-left: 35px;}
 
 .caja {
   display: inline-block;
-  width: 200px;
+  width: 250px;
   vertical-align: top;
   margin: 10px 10px;
   background-color:aliceblue;
@@ -22,8 +24,9 @@ ul {padding-left: 35px;}
 li {text-align: left;}
 
 .caja .img {
+  background-position: center;
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
