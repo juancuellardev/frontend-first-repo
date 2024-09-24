@@ -17,35 +17,3 @@ p {
     font-weight: 450;
     font-size: 28px;
 }
-.imagen {
-    height: 350px;
-}
-
-header {
-    background-image: url("../img/Banersito.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 50px;
-}
-header .titulo {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    padding-top: 50px;
-}
-header .texto {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: left;
-    max-width: 600px;
-}
-header .boton {
-    background-color: blue;
-    color: white;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: center;
-    width: 200px;
-    margin-top: 10px;
-}
