@@ -46,3 +46,23 @@ body {
     width: 200px;
     margin-top: 10px;
 }
+
+.nav {
+    text-align: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.nav a {
+    display: inline-block;
+    height: 100%;
+    padding: 15px 10px 10px;
+    text-decoration: none;
+    color: #0067b1;
+    font-size: 20px;
+}
+
+.nav a.active {
+    border-bottom: 4px solid #ffd000;
+}
